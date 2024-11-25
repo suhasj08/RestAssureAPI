@@ -1,0 +1,81 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="RE_Endpoints">
+
+
+	 <listeners>
+		<listener class-name="resources.Extentreport" />
+	</listeners>
+	
+	
+   <test name="Eligibility_Borrower">
+		<classes>
+			<class name="peopleFront.rule_engine_stage1.Eligibility_Borrower" />
+		</classes>
+	</test>
+	
+	 <test name="kyc_Borrower">
+		<classes>
+			<class name="peopleFront.rule_engine.stage2.kyc_Borrower"/>
+		</classes>
+	</test>
+	
+	 <test name="selfie">
+		<classes>
+			<class name="peopleFront.rule_engine.stage2.selfie_borrower" />
+		</classes>
+	</test>
+	
+	<test name="Amt">
+		<classes>
+			<class name="peopleFront.rule_engine.stage3.amount_api_borrower" />
+		</classes>
+	</test>
+	
+		<test name="Reevaluate">
+		<classes>
+			<class name="peopleFront.rule_engine.stage4.Re_evaluate" />
+		</classes>
+	</test> 
+	
+	
+	<test name="Esign_slct">
+		<classes>
+			<class name="peopleFront.rule_engine.stage4.Esign_slct" />
+		</classes>
+	</test> 
+	
+	<test name="otp_reff">
+		<classes>
+			<class name="peopleFront.rule_engine.stage2.Otp_Ref_Borrower" />
+		</classes>
+	</test> 
+	
+	<test name="RefContact">
+		<classes>
+			<class name="peopleFront.rule_engine.stage4.Ref_Contact" />
+		</classes>
+	</test> 
+	
+	<test name="bureau">
+		<classes>
+			<class name="peopleFront.rule_engine.stage2.Bureau" />
+		</classes>
+	</test> 
+	
+	<test name="Reevaluation_Required">
+		<classes>
+			<class name="peopleFront.rule_engine.stage3.Re_evaluation_required" />
+		</classes>
+	</test> 
+	
+	
+	<test name="Penny">
+		<classes>
+			<class name="peopleFront.rule_engine.stage4.Penny_Drop" />
+		</classes>
+	</test>  
+	
+	
+	
+</suite>  
